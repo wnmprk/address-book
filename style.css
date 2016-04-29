@@ -14,8 +14,8 @@ body {
 .ContactView-title {
     font-family: 'Lobster', sans-serif;
     letter-spacing: 5px;
-    font-size: 30px;
-    padding-top: 30px;
+    font-size: 40px;
+    padding-top: 20px;
     margin: 0;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -61,19 +61,19 @@ body {
 }
 
 .ContactForm {
+    margin-top: 20px;
     width: 50%;
-    margin: 0 auto;
-    margin-top: 5%;
+    margin-left: 24%;
 }
 
 .ContactForm > input,
 .ContactForm > textarea {
     display: block;
-    width: 260px;
+    width: 100%;
     padding: 4px 8px;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
     border-radius: 3px;
-    border: 3px solid #8caba8;
+    border: 2px solid #8caba8;
     font-size: 14px;
     color: #8caba8;
     background-color: rgba(0, 0, 0, 0.1);
@@ -85,7 +85,7 @@ input:focus {
 }
 
 button {
-    border: 3px solid #8caba8;
+    border: 2px solid #8caba8;
     background-color: transparent;
     color: #8caba8;
     border-radius: 5px;
@@ -93,6 +93,7 @@ button {
     font-size: 14px;
     width: 100px;
     cursor: pointer;
+    float: left;
 }
 
 button:hover {

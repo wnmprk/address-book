@@ -1,6 +1,6 @@
 // React is a tool for rendering HTML with JavaScript.
 var contacts = [
-    { key: 1, name: "Jess Park", email: "jessjess@jesspark.com", description: "Front-end Unicorn" },
+    { key: 1, name: "Jess Park", email: "jessjess@jesspark.com", description: "Software Engineer" },
     { key: 2, name: "Dan Park", email: "dandan@example.com" },
     { key: 3, name: "Joan Park" },
 ]
@@ -9,7 +9,8 @@ var newContact = { name: "", email: "", description: "" }
 
 var ContactForm = React.createClass({
     propTypes: {
-        contact: React.PropTypes.object.isRequired
+        contact: React.PropTypes.object.isRequired,
+        onChange: React.PropTypes.func.isRequired
     },
     render: function() {
         return (
@@ -18,19 +19,19 @@ var ContactForm = React.createClass({
                     className: 'ContactForm-name',
                     type: 'text',
                     placeholder: 'Name (required)',
-                    value: this.props.contact.name,
+                    value: this.props.contact.name
                 }),
                 React.createElement('input', {
                 	className: 'ContactForm-email',
                     type: 'text',
                     placeholder: 'Email (required)',
-                    value: this.props.contact.email,
+                    value: this.props.contact.email
                 }),
                 React.createElement('textarea', {
                 	className: 'ContactForm-description',
                     type: 'text',
                     placeholder: 'Description',
-                    value: this.props.contact.description,
+                    value: this.props.contact.description
                 }),
                 React.createElement('button', { type: 'submit' }, 'Add Contact')
             )
@@ -72,7 +73,12 @@ var ContactView = React.createClass({
             React.createElement('div', { className: 'ContactView' },
                 React.createElement('h1', { className: 'ContactView-title' }, "My Contacts"),
                 React.createElement('ul', { className: 'ContactView-list' }, contactItemElements),
-                React.createElement(ContactForm, { contact: this.props.newContact })
+                React.createElement(ContactForm, {
+                	contact: this.props.newContact,
+                	onChange: function(contact) {
+                		console.log(contact)
+                	}
+                })
             )
         )
     }
