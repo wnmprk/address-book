@@ -1,0 +1,101 @@
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #dfdfde;
+    color: #a2798f;
+    letter-spacing: 3px;
+}
+
+.ContactView-list {
+    border-top: 3px solid #a2798f;
+}
+
+.ContactView-title {
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-top: 30px;
+    margin: 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ContactView-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ContactItem {
+    margin: 0;
+    padding: 8px 24px;
+    border-bottom: 3px solid #a2798f;
+}
+
+.ContactItem-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ContactItem-email {
+    font-size: 14px;
+    margin-top: 4px;
+    font-style: italic;
+    color: #a2798f;
+    text-transform: initial;
+}
+
+.ContactItem-email:hover {
+    color: #8caba8;
+}
+
+.ContactItem-description {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.ContactItem:hover {
+    background-color: #d7c6cf;
+}
+
+.ContactForm {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.ContactForm > input,
+.ContactForm > textarea {
+    display: block;
+    width: 260px;
+    padding: 4px 8px;
+    margin-bottom: 5%;
+    border-radius: 3px;
+    border: 3px solid #8caba8;
+    font-size: 14px;
+    color: #8caba8;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+button {
+    border: 3px solid #8caba8;
+    background-color: transparent;
+    color: #8caba8;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 14px;
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8caba8;
+    color: #dfdfde;
+}
