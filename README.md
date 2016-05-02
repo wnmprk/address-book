@@ -1,3 +1,3 @@
 # My Contacts App: built with React
 
-![](http://i.imgur.com/08PVqIf.png)
+![](http://i.imgur.com/08PVqIf.png | width=200)
