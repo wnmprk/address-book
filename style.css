@@ -15,9 +15,8 @@ body {
     font-family: 'Lobster', sans-serif;
     letter-spacing: 5px;
     font-size: 40px;
-    padding-top: 20px;
+    padding: 20px 20px;
     margin: 0;
-    height: 70px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -29,7 +28,7 @@ body {
 
 .ContactItem {
     margin: 0;
-    padding: 8px 24px;
+    padding: 10px 24px 0px 24px;
     border-bottom: 3px solid #a2798f;
 }
 
@@ -94,9 +93,15 @@ button {
     width: 100px;
     cursor: pointer;
     float: left;
+    outline: none;
 }
 
 button:hover {
     background-color: #8caba8;
     color: #dfdfde;
+}
+
+button:active {
+    background-color: transparent;
+    color: #8caba8;
 }
